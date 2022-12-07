@@ -166,7 +166,7 @@ public class GstVideoComponentTest {
 				
 				// scan the buffer and map to image array
 				for (int i = 0; i < pixCount; i++) {
-					pixValue = Byte.toUnsignedInt(bb.get(i));
+					pixValue = Byte.toUnsignedInt(bb.get(i*2));
 					pixValue /= 256.0;
 					if (pixValue > max) max = pixValue;
 					if (pixValue < min) min = pixValue;

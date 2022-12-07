@@ -37,9 +37,14 @@ public class SimpleTest extends JPanel {
 	public SimpleTest() {
 		videosComponent = new GstVideoComponentTest();
 				
+//		Bin bin = Gst.parseBinFromDescription(
+//				"mfvideosrc device-path=\"\\\\\\\\\\?\\\\usb\\#vid_04f2\\&pid_b230\\&mi_00\\#7\\&369e123a\\&0\\&0000\\#\\{e5323777-f976-4f5b-9b55-b94699c46e44\\}\\\\global\""
+//						+ " ! capsfilter caps=video/x-raw,width=640,height=480,framerate=20/1,format=NV12",
+//						true);
+		
 		Bin bin = Gst.parseBinFromDescription(
-				"mfvideosrc device-path=\"\\\\\\\\\\?\\\\usb\\#vid_04f2\\&pid_b230\\&mi_00\\#7\\&369e123a\\&0\\&0000\\#\\{e5323777-f976-4f5b-9b55-b94699c46e44\\}\\\\global\""
-						+ " ! capsfilter caps=video/x-raw,width=640,height=480,framerate=20/1,format=NV12",
+				"mfvideosrc device-path=\"\\\\\\\\\\?\\\\usb\\#vid_058f\\&pid_5608\\&mi_00\\#6\\&df6cc6a\\&0\\&0000\\#\\{e5323777-f976-4f5b-9b55-b94699c46e44\\}\\\\global\""
+						+ " ! capsfilter caps=video/x-raw,width=320,height=240,framerate=30/1,format=YUY2",
 						true);
 		
 		pipeline = new Pipeline();
