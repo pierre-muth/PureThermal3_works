@@ -125,7 +125,7 @@ public class SimpleTest extends JPanel {
 
 		Utils.configurePaths();
 		Gst.init(Version.BASELINE, "SimpleTest", args);
-		Utils.listDevices();
+		Utils.printDevicesList();
 
 		JFrame f = new JFrame("Simple Camera Test");
 		f.add(new SimpleTest());

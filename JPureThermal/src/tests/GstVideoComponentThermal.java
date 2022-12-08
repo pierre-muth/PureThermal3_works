@@ -1,4 +1,4 @@
-package jpurethermal;
+package tests;
 
 import java.nio.ByteBuffer;
 import java.nio.ShortBuffer;
@@ -15,9 +15,6 @@ import org.freedesktop.gstreamer.elements.AppSink;
 import cern.jdve.data.DefaultDataSet;
 import cern.jdve.data.DefaultDataSet3D;
 
-/**
- * A Swing component for displaying video from a GStreamer pipeline.
- */
 public class GstVideoComponentThermal {
 	public static final int HISTOGRAM_RESOLUTION = 128;
 
