@@ -43,7 +43,7 @@ public class JPureThermal extends JPanel {
 //		Bin bin = Gst.parseBinFromDescription(Utils.getPureThermalDescriptionForGst(), true);
 
 		Bin bin = Gst.parseBinFromDescription(
-				"mfvideosrc device-path=\"\\\\\\\\\\?\\\\usb\\#vid_1e4e\\&pid_0100\\&mi_00\\#7\\&d03da6\\&0\\&0000\\#\\{e5323777-f976-4f5b-9b55-b94699c46e44\\}\\\\global\""
+				"mfvideosrc device-path=\"\\\\\\\\\\?\\\\usb\\#vid_1e4e\\&pid_0100\\&mi_00\\#6\\&d03da6\\&0\\&0000\\#\\{e5323777-f976-4f5b-9b55-b94699c46e44\\}\\\\global\""
 						+ " ! capsfilter caps=video/x-raw,width=160,height=120,framerate=10000000/1111111,format=GRAY16_LE",
 						true);
 		
